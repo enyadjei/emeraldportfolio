@@ -1,117 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emerald Adjei - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emerald Adjei - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Theme Toggle -->
-    <div class="theme-toggle">
-        <!-- Navigation Links -->
-        <a href="about.html" class="theme-btn nav-link">About</a>
-        <a href="portfolio.html" class="theme-btn nav-link">Portfolio</a>
+  <!-- Header -->
+  <header class="py-3">
+    <div class="theme-toggle d-flex align-items-center gap-3">
+      <!-- Navigation Links -->
+      <a href="about.html" class="theme-btn nav-link">About</a>
+      <a href="portfolio.html" class="theme-btn nav-link">Portfolio</a>
 
-        <button class="theme-btn icon-btn" id="themeToggle" onclick="toggleTheme()">
-            <svg id="sunIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="5" stroke="#1C274C" stroke-width="1.5"></circle>
-                <path d="M12 2V4" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M12 20V22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M4 12L2 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M22 12L20 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M19.7778 4.22266L17.5558 6.25424" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M4.22217 4.22266L6.44418 6.25424" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M6.44434 17.5557L4.22211 19.7779" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M19.7778 19.7773L17.5558 17.5551" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
-            </svg>
-            <svg id="moonIcon" style="display: none;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.7553 2.29085V2.29085L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.5828 12.531 3.57467L11.7553 2.29085C9.65609 3.5593 8.25 5.86509 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.7324 2.63168C11.6686 2.56527 11.6538 2.50244 11.6503 2.47703C11.6461 2.44587 11.6482 2.35557 11.7553 2.29085L12.531 3.57467C13.0342 3.27065 13.196 2.71398 13.1368 2.27627C13.0754 1.82126 12.7166 1.25 12 1.25V2.75ZM21.7092 12.2447C21.6444 12.3518 21.5541 12.3539 21.523 12.3497C21.4976 12.3462 21.4347 12.3314 21.3683 12.2676C21.2899 12.1923 21.25 12.0885 21.25 12H22.75C22.75 11.2834 22.1787 10.9246 21.7237 10.8632C21.286 10.804 20.7293 10.9658 20.4253 11.469L21.7092 12.2447Z" fill="#FFF"></path>
-            </svg>
-        </button>
+      <!-- Theme Toggle -->
+      <button class="theme-btn icon-btn" id="themeToggle" onclick="toggleTheme()">
+        <svg id="sunIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="5" stroke="#1C274C" stroke-width="1.5"/>
+          <path d="M12 2V4M12 20V22M4 12L2 12M22 12L20 12M19.7778 4.22266L17.5558 6.25424M4.22217 4.22266L6.44418 6.25424M6.44434 17.5557L4.22211 19.7779M19.7778 19.7773L17.5558 17.5551" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <svg id="moonIcon" style="display: none;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.0672 11.8568L20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5C9.75 6.41182 10.8627 4.5828 12.531 3.57467C9.65609 3.5593 8.25 5.86509 8.25 8.5C8.25 12.5041 11.4959 15.75 15.5 15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447C21.6444 12.3518 21.5541 12.3539 21.523 12.3497C21.4976 12.3462 21.4347 12.3314 21.3683 12.2676C21.2899 12.1923 21.25 12.0885 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12H21.0672Z" fill="#FFF"/>
+        </svg>
+      </button>
 
-        <!-- Link to Github -->
-        <button class="theme-btn icon-btn" onclick="window.open('https://github.com/emerald-adjei', '_blank')">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" fill="#1C274C"/>
-            </svg>
-        </button>
+      <!-- GitHub Link -->
+      <button class="theme-btn icon-btn" onclick="window.open('https://github.com/emerald-adjei', '_blank')">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" fill="#1C274C"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container py-5">
+    <div class="row align-items-center">
+      <!-- Text -->
+      <div class="col-lg-8 col-md-7 order-2 order-md-1">
+        <div class="header-text">
+          <h1 class="display-4 fw-bold mb-4">
+            I'm <span class="highlight">Emerald Adjei</span>, a researcher, analyst, designer and product manager.
+          </h1>
+
+          <div class="d-flex flex-column flex-md-row gap-3 mb-4">
+            <a class="cta-btn primary" href="https://www.linkedin.com/in/emerald-adjei/" target="_blank">
+              <i class="bi bi-linkedin me-2"></i> Contact Me on LinkedIn
+            </a>
+            <a class="cta-btn secondary" href="portfolio.html">
+              <i class="bi bi-journals me-2"></i> Check Out my Work
+            </a>
+          </div>
+
+          <p class="lead">
+            Striving to be a polymath, my experiences include working with individuals and organizations from low-income communities — especially women and gender minorities — to scale digital solutions that address real-world challenges, from financial inclusion to agricultural sustainability.
+          </p>
+        </div>
+      </div>
+
+      <!-- Profile Image -->
+      <div class="col-lg-4 col-md-5 order-1 order-md-2 text-center mb-4 mb-md-0">
+        <img src="img/eme.jpg" alt="Emerald Adjei" class="profile-photo"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Worked With Section -->
+  <section class="container text-center my-5">
+    <img src="img/workedwith.png" alt="Worked With Logos" class="img-fluid workedwith-img"/>
+  </section>
+
+  <hr>
+
+  <!-- Portfolio Section -->
+  <section class="container content my-5">
+    <div class="mb-5">
+      <h3>VSLA App: SATF/MasterCard Foundation/DSS Collaboration.</h3>
+      <p>
+        A digital platform designed to modernize and streamline the savings and loan processes traditionally managed in rural communities through manual systems. It is aimed at empowering low-income groups, particularly in sub-Saharan Africa, by offering an accessible and user-friendly way to manage savings, access loans, and facilitate financial transactions within their local groups. 
+        <a href="vsla.html" class="read-more">Read More</a>
+      </p>
+      <div class="image-work">
+        <img src="img/2.png" alt="VSLA App Screenshot"/>
+      </div>
     </div>
 
-    <!-- Main Body -->
-    <div class="container py-5">
-        <div class="row align-items-center">
-            <!-- Text Content - Shows first on mobile -->
-            <div class="col-lg-8 col-md-7 order-2 order-md-1">
-                <div class="header-text">
-                    <h1 class="display-4 fw-bold mb-4">
-                        I'm <span class="highlight">Emerald Adjei</span>, a researcher, analyst, designer and product manager.
-                    </h1>
-
-                    <div class="d-flex flex-column flex-md-row gap-3 mb-4">
-                        <a class="cta-btn primary" href="https://www.linkedin.com/in/emerald-adjei/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin me-2" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                            </svg>
-                            Contact Me on LinkedIn
-                        </a>
-
-                        <a class="cta-btn secondary" href="portfolio.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journals me-2" viewBox="0 0 16 16">
-                                <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2"/>
-                                <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0"/>
-                            </svg>
-                            Check Out my Work
-                        </a>
-                    </div>
-
-                    <p class="lead">
-                    Striving to be a polymath, my experiences include working with individuals and organizations from low-income communities - especially women and gender minorities to scale digital solutions that address real-world challenges, from financial inclusion to agricultural sustainability.
-                    </p>  
-                </div>
-            </div>
-
-            <!-- Image - Shows second on mobile -->
-            <div class="col-lg-4 col-md-5 order-1 order-md-2 text-center mb-4 mb-md-0">
-                <div class="header-image">
-                    <img src="img/eme.jpg" alt="Emerald Adjei" class="profile-photo" />
-                </div>
-            </div>
-        </div>
+    <div class="mb-5">
+      <h3>TaskPaddy App: Vortex Ltd.</h3>
+      <p>
+        A platform where customers can easily connect with the right service provider by simply creating a task and finding someone to complete it. 
+        <a href="taskpaddy.html" class="read-more">Read More</a>
+      </p>
+      <div class="image-work">
+        <img src="img/3.png" alt="TaskPaddy App Screenshot"/>
+      </div>
     </div>
 
-    <section>
-        <div class="d-flex justify-content-center align-items-center h-100 workedwith-img">
-            <img src="img/workedwith.png" alt="">
-        </div>
-    </section>
-
-
-    <section>
-        
-    </section>
-
-
-
-
-
-
-
-    <!-- Footer -->
-    <div class="container">
-        <div class="footer text-center">
-            <div class="copyright">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle me-1" viewBox="0 0 16 16">
-                    <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/>
-                </svg>2025 Emerald Adjei. All rights reserved.
-            </div>
-        </div>
+    <div>
+      <h3>miWay Insurance (USSD Product): LeapFrog CXLaunchpad Project.</h3>
+      <p>
+        Tasked with identifying and validating the causes of premium collection issues and designing an optimized premium collection service, and developing a self-service payment system that addressed key customer pain points to improve user retention and reduce reliance on customer support. 
+        <a href="miway.html" class="read-more">Read More</a>
+      </p>
+      <div class="image-work">
+        <img src="img/4.png" alt="miWay Insurance Screenshot"/>
+      </div>
     </div>
+  </section>
 
-<script src="main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <hr>
 
+  <!-- Footer -->
+  <footer class="container text-center py-3">
+    <p class="mb-0">
+      <i class="bi bi-c-circle me-1"></i> 2025 Emerald Adjei. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
