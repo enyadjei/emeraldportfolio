@@ -386,12 +386,70 @@ VSLA
   color: #7d7d7d; 
 }
 
-.miway-section {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 20px;
+/* ======================
+miWAY
+
+===================== */
+.miway-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;             /* space between icon, heading, and paragraph */
+  /* padding: 2rem 1rem;     */
 }
 
+
+.miway-section {
+  max-width: 900px;  
+  margin: 90px auto;
+  /* padding: 20px; */
+  /* line-height: 1.6; */
+}
+
+.miway-section {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-bottom: 1.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.stats-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stat-card {
+  border: 1px solid #dcd8d8;
+  border-radius: 0.75rem;
+  padding: 0.9rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #fff; /* looks like a card */
+  color: #7d7d7d;
+}
+
+.stat-card strong {
+  color: purple; /* highlight numbers */
+}
+
+.stat-card i {
+  color: #ffc107; /* lightbulb = yellow */
+  /* font-size: 1.2rem; */
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #7d7d7d;
+}
 
 
 

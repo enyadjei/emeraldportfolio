@@ -40,149 +40,418 @@
             </svg>
         </button>
     </div>
-                   
-    <div class="miway-section container">
-        <div class="vsla-header">
-            <svg xmlns="http://www.w3.org/2000/svg" 
-                width="80" height="80" 
-                fill="currentColor" 
-                class="bi bi-graph-up-arrow about-icon" 
-                viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
-            </svg>
-
-            <div>
-                <h3>About the miWay Product</h3>
-                <p>The aim of the project was to conduct research to identify and validate the root causes of premium collection issues. Our main goal was to design an optimized premium collection service and a self-service payment system that addressed customers' main pain points. The existing product experienced a rising drop-off rate and consumed about 15% of call center time due to frequent customer complaints. To address this, we collaborated closely with call center supervisors, managers, and members of the CXLaunchpad—an initiative by LeapFrog focused on building customer experience capabilities within companies. This collaborative approach allowed us to co-create effective solutions that streamlined the payment process and improved customer satisfaction.</p>
-            </div>
-
-            <div>
-                <h3>Problem During Onboarding</h3>
-                <p>Over 50% of potential customers drop after reaching the Optional Savings screen on USSD. A further 59% drop upon reaching the Selected Family Member Date of Birth screen.</p>
-            </div>
-
-            <div>
-                <h5>Pain Points Identified after Subscription</h5>
-                <ul>
-                    <li>The insufficient number of collection runs - Runs are manually triggered and managed two (2) times in the month. </li>
-                    <li>Some customers are not included in the monthly runs even though their mobile money wallet is sufficiently funded. Only 30% of billing is successful during the first collection run.</li>
-                    <li>Some customers missing collection runs altogether due to late deposit of funds in their wallets.</li>
-                    <li>Collection runs are not scheduled at times when the success rate is likely to be at its maximum since optimum times are currently unknown.</li>
-                </ul>
-            </div>
-
-            <div>
-                <div>
-                    <h5>Concept Testing based on Pain Points</h5>
-                    <div class="alert alert-light d-flex align-items-center" role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb me-2" viewBox="0 0 16 16">
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-                        </svg>
-                        <div>
-                            Allow Customers to select their own billing date.
-                        </div>
-                    </div>
 
 
-                    <div class="alert alert-light d-flex align-items-center" role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb me-2" viewBox="0 0 16 16">
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-                        </svg>
-                        <div>
-                            Allow customers to pay for multiple months in advance and potentially get a discount as a result.
-                        </div>
-                    </div>
+<div class="miway-section container">
+  <header class="miway-header mb-4">
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="60" fill="currentColor" class="bi bi-file-bar-graph-fill" viewBox="0 0 16 16">
+        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-2 11.5v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5m-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z"/>
+    </svg>
+    <h3>miWay Insurance</h3>
+  </header>
 
-                    <div class="alert alert-light d-flex align-items-center" role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb me-2" viewBox="0 0 16 16">
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-                        </svg>
-                        <div>
-                            Use IVR to trigger an arrears payment (instead of manually by Call Center agent).
-                        </div>
-                    </div>
+  <!-- Project Intro -->
+  <section class="mb-4">
+    <p>
+      The aim of the project was to conduct research to identify and validate the root causes of premium collection issues. 
+      Our main goal was to design an optimized premium collection service and a self-service payment system that addressed customers' main pain points. 
+      The existing product experienced a rising drop-off rate and consumed about 15% of call center time due to frequent customer complaints. 
+      To address this, we collaborated closely with call center supervisors, managers, and members of the CXLaunchpad—an initiative by LeapFrog focused on building customer experience capabilities within companies. 
+      This collaborative approach allowed us to co-create effective solutions that streamlined the payment process and improved customer satisfaction.
+    </p>
+  </section>
 
-                    <div class="alert alert-light d-flex align-items-center" role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb me-2" viewBox="0 0 16 16">
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-                        </svg>
-                        <div>
-                            Send Customers who have missed a payment a link via SMS to execute a one-time payment.
-                        </div>
-                    </div>
-                </div>
+  <!-- Problem -->
+  <section class="mb-4">
+    <h4>Problem During Onboarding</h4>
+    <p>
+      Over 50% of potential customers drop after reaching the Optional Savings screen on USSD. 
+      A further 59% drop upon reaching the Selected Family Member Date of Birth screen.
+    </p>
+  </section>
 
-            </div>
+  <!-- Pain Points -->
+  <section class="mb-4">
+    <h5>Pain Points Identified after Subscription</h5>
+    <ul>
+      <li>The insufficient number of collection runs - Runs are manually triggered and managed two (2) times in the month.</li>
+      <li>Some customers are not included in the monthly runs even though their mobile money wallet is sufficiently funded. Only 30% of billing is successful during the first collection run.</li>
+      <li>Some customers missing collection runs altogether due to late deposit of funds in their wallets.</li>
+      <li>Collection runs are not scheduled at times when the success rate is likely to be at its maximum since optimum times are currently unknown.</li>
+    </ul>
+  </section>
 
-            <div>
-                <h4>The Design Process</h4>
-                <div>
-                    <h5>1 Interviews</h5>
-                    <p>Interviews were conducted with 8 call center supervisors and agents to understand what they perceived the problem with the premium collection was. A survey was also created and data was collected in the form of an interview with 112 random customers to observe their mobile money usage habits and their understanding of the collection runs.</p>
-                </div>
+  <!-- Concept Testing -->
+  <section class="mb-4">
+    <h6>Concept Testing Based on Pain Points</h5>
+    <div class="d-flex flex-column gap-2">
+      <div class="stat-card">
+        <i class="bi bi-lightbulb me-2"></i>
+        <span>Allow customers to select their own billing date.</span>
+      </div>
 
-                <div>
-                    <div class="alert alert-light d-flex align-items-center" role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb me-2" viewBox="0 0 16 16">
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-                        </svg>
-                        <div>
-                            57% of users check their balance at least once a week. 12% had someone check their balance on their behalf and the others check their balance after every transaction.
-                        </div>
-                    </div>
+      <div class="stat-card">
+        <i class="bi bi-lightbulb me-2"></i>
+        <span>Allow customers to pay for multiple months in advance and potentially get a discount as a result.</span>
+      </div>
 
-                    <div class="alert alert-light d-flex align-items-center" role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb me-2" viewBox="0 0 16 16">
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-                        </svg>
-                        <div>
-                            73% of subscribers answered no to choosing their own billing date, however, 24% of these subscribers suggested the billing date by the end of every month between the 25th to the 30th/31st.
-                        </div>
-                    </div>
+      <div class="stat-card">
+        <i class="bi bi-lightbulb me-2"></i>
+        <span>Use IVR to trigger an arrears payment (instead of manually by Call Center agent).</span>
+      </div>
 
-                    <div class="alert alert-light d-flex align-items-center" role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb me-2" viewBox="0 0 16 16">
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-                        </svg>
-                        <div>
-                            83% of subscribers answered in the negative to multiple monthly deductions in advance.
-                        </div>
-                    </div>
+      <div class="stat-card">
+        <i class="bi bi-lightbulb me-2"></i>
+        <span>Send customers who have missed a payment a link via SMS to execute a one-time payment.</span>
+      </div>
+    </div>
+  </section>
 
-                    <div class="alert alert-light d-flex align-items-center" role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb me-2" viewBox="0 0 16 16">
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-                        </svg>
-                        <div>
-                            85.96% of existing users surveyed explained they did not understand the product they signed up for.
-                        </div>
-                    </div>
+  <!-- Design Process -->
+   <!-- Interviews -->
+  <section class="mb-4">
+    <h4>The Design Process</h4>
 
-                    <div class="alert alert-light d-flex align-items-center" role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb me-2" viewBox="0 0 16 16">
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-                        </svg>
-                        <div>
-                            11% assumed deductions happened whenever they had money in their Mobile Money (MOMO) account.
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            
-
-                
-            
-        </div> 
+    <div class="mb-3">
+      <h5>1. Interviews</h5>
+      <p>
+        Interviews were conducted with 8 call center supervisors and agents to understand what they perceived the problem with the premium collection was. 
+        A survey was also created and data was collected in the form of an interview with 112 random customers to observe their mobile money usage habits and their understanding of the collection runs.
+      </p>
     </div>
 
+    <!-- Stats Card -->
+
+    <div class="stats-grid">
+    <!-- Column 1: long cards -->
+    <div class="stats-column">
+        <div class="stat-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM6.5 5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm0 3h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Z"/>
+        </svg>
+        <span><strong>57%</strong> of users check their balance at least once a week. <strong>12%</strong> had someone check their balance on their behalf and the others check their balance after every transaction.</span>
+        </div>
+
+        <div class="stat-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM6.5 5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm0 3h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Z"/>
+        </svg>
+        <span><strong>73%</strong> of subscribers answered no to choosing their own billing date, however, <strong>24%</strong> of these subscribers suggested the billing date by the end of every month between the 25th to the 30th/31st.</span>
+        </div>
+    </div>
+
+    <!-- Column 2: short cards -->
+    <div class="stats-column">
+        <div class="stat-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM6.5 5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm0 3h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Z"/>
+        </svg>
+        <span><strong>83%</strong> of subscribers answered in the negative to multiple monthly deductions in advance.</span>
+        </div>
+
+        <div class="stat-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM6.5 5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm0 3h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Z"/>
+        </svg>
+        <span><strong>85.96%</strong> of existing users surveyed explained they did not understand the product they signed up for.</span>
+        </div>
+
+        <div class="stat-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM6.5 5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm0 3h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Z"/>
+        </svg>
+        <span><strong>11%</strong> assumed deductions happened whenever they had money in their Mobile Money (MOMO) account.</span>
+        </div>
+    </div>
+    </div>
+</section>
 
 
+<!-- Usability audit -->
+<section class="mb-4">
+    <div class="mb-3">
+        <h5>2. Usability Audit</h5>
+        <p>
+            An auditing and testing round with current and new users was conducted to ascertain usability issues with the existing product. Data on incomplete sign-ups was also collected from the system's backend.
+        </p>
+
+        <img src="img/graph.jpg" alt="" style="width: 100%;">
+    </div>
+</section>
+
+<section class="mb-4">
+    <h5>Challenges Faced By Users Per Screen</h5>
+
+    <div class="mb-3">
+        <h6>2.1 Savings Amount Screen</h6>
+
+        <div class="stats-grid">
+            <div class="stat-card stat-long">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Users misunderstood the screen as a separate monthly payment instead of additional savings to their premium.</p>
+            </div>
+
+            <div class="stat-card stat-long">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Adding Savings to their premium amount appeared out of context since the product introduced to them was that of insurance.</p>
+            </div>
+
+            <div class="stat-card stat-long">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Users were unsure of how to reply in order to move to the next step.</p>
+            </div>
+
+            <div class="stat-card stat-long">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Users were skeptical since the Savings amount did not come with interest.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <h6>2.2 Additional Life Screens</h6>
+
+        <div class="stats-grid">
+            <div class="stat-card stat-long">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Users misunderstood who an additional life was and why they needed to strictly be a biological family member.</p>
+            </div>
+
+            <div class="stat-card stat-long">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>User were unsure of 'who' to add as the additional life or their details such as 'date of birth' and 'contact details'. </p>
+            </div>
+
+            <div class="stat-card stat-long">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Users did not understand the policy and why they needed to add one.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <h6>2.3 Other Reasons</h6>
+
+        <div class="stats-grid">
+            <div class="stat-card stat-long">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Started sign-up process due to curiosity.</p>
+            </div>
+
+            <div class="stat-card stat-long">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Long sign-up process than it should be in their opinion. </p>
+            </div>
+        </div>
+    </div>
+</section>
 
 
+<!-- solution -->
+<section class="mb-4">
+    <h5>Solution</h5>
 
+    <div class="mb-3">
+        <h6>Solutions for New Users</h6>
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Deferment of Savings Option and Additional Life Steps to make the process sign-up process less cumbersome. An SMS would be sent two (2) working days after sign-up to remind subscribers to fill in the details for the deferred screens.</p>
+            </div>
+
+            <div class="stat-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>'3 Thing you Should Know' option on the onboarding screen to explain the product to users any time they visit the platform through USSD code (#165).</p>
+            </div>
+
+            <div class="stat-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>An option to totally 'skip' the Savings Option step during the sign-up process.</p>
+            </div>
+
+            <div class="stat-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Changes in the verbiage used across screens to make the wording SIMPLE and easily understandable.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <h6>Solutions for Existing Users</h6>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Send Customers who missed their payment a link via SMS to execute a one-time payment.</p>
+            </div>
+
+            <div class="stat-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Collection run should be triggered automatically not manually.</p>
+            </div>
+
+            <div class="stat-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>Collection run should be triggered from the 24th of the month through to the 1st of the following month instead of the current collection run on the 20th of each month.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="mb-4">
+    <h6>Concept Testing Feedback based on Survey</h5>
+    <div class="d-flex flex-column gap-2">
+      <div class="stat-card">
+        <i class="bi bi-lightbulb me-2"></i>
+        <span><del>Allow customers to select their own billing date.</del></span>
+      </div>
+
+      <div class="stat-card">
+        <i class="bi bi-lightbulb me-2"></i>
+        <span><del>Allow customers to pay for multiple months in advance and potentially get a discount as a result.</del></span>
+      </div>
+
+      <div class="stat-card">
+        <i class="bi bi-lightbulb me-2"></i>
+        <span><del>Use IVR to trigger an arrears payment (instead of manually by Call Center agent).</del></span>
+      </div>
+
+      <div class="stat-card">
+        <i class="bi bi-lightbulb me-2"></i>
+        <span>Send customers who have missed a payment a link via SMS to execute a one-time payment.</span>
+      </div>
+    </div>
+</section>
+
+
+<section class="mb-4">
+    <h5>Iteration and Testing</h5>
+
+    <div class="mb-3">
+        <figure>
+            <img src="img/m2.png" alt="" style="width: 100%;">
+                <figcaption>
+                    New onboarding.
+                </figcaption>
+        </figure>
+    </div>
+
+    <div class="mb-3">
+        <figure>
+            <img src="img/m3.png" alt="" style="width: 100%;">
+                <figcaption>
+                    Selection of Premium and Options to Skip Savings.
+                </figcaption>
+        </figure>
+    </div>
+
+    <div class="mb-3">
+        <figure>
+            <img src="img/m4.png" alt="" style="width: 100%;">
+                <figcaption>
+                    SMS Reminders for Users to top-up their mobile money accounts for monthly premium payments.
+                </figcaption>
+        </figure>
+    </div>
+
+    <div class="mb-3">
+        <figure>
+            <img src="img/m5.png" alt="" style="width: 100%;">
+                <figcaption>
+                    Usage of Simple Verbiage.
+                </figcaption>
+        </figure>
+    </div>
+
+</section>
+
+
+<section>
+    <h5>Final Testing and Feedback</h5>
+        <p>A final testing conducted with some users showed that users had a better understanding of what the product is about and requested for further features. </p>
+
+    <div class="stats-grid">
+            <div class="stat-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>"The process is understandable, there is no need to defer the screens."</p>
+            </div>
+
+            <div class="stat-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>"The wording is very understandable and easy to follow."</p>
+            </div>
+
+            <div class="stat-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>"I do not want to add a savings amount, I want to concentrate on the insurance policy."</p>
+            </div>
+
+            <div class="stat-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31..."/> <!-- lightbulb path -->
+                </svg>
+                <p>"There should be more options for biological family member, what about my adopted kids? What if I don't have any biological family member?"</p>
+            </div>
+    </div>
+</section>
+
+<!-- Reflection -->
+<section class="reflection-card">
+    <h5>Reflection</h5>
+    <div class="d-flex flex-column gap-2">
+      <div class="stat-card">
+        <i class="bi bi-lightbulb me-2"></i>
+        <span>Redesigning existing products can be tough, do not change the direction of the product so much that you forget about the existing users.</span>
+      </div>
+
+      <div class="stat-card">
+        <i class="bi bi-lightbulb me-2"></i>
+        <span>Working on an already existing product with numerous subscribers is difficult, however, understanding existing users and their point of view would give you more insights than what the owners of the product perceive as the issue.</span>
+      </div>
+    </div>
+</section>
+
+</div>
 
     <hr>
   <!-- Footer -->
